@@ -1,0 +1,39 @@
+package vistas.paneles;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class PanelDerecha extends JPanel implements ActionListener {
+	private JLabel lPremios;
+	private JTextField tbPremios;
+	private JButton btReiniciar, btCerrar;
+	
+	public PanelDerecha() {
+		setLayout(new GridLayout(4, 1));
+		cargarComponentes();
+	}
+
+	private void cargarComponentes() {
+		lPremios = new JLabel("Premios:");
+		tbPremios = new JTextField("0");
+		btReiniciar = new JButton("Reiniciar");
+		btCerrar = new JButton("Cerrar");
+		
+		add(lPremios);
+		add(tbPremios);
+		add(btReiniciar);
+		add(btCerrar);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package vistas.paneles;
+
+import javax.swing.JPanel;
+
+public class PanelDerecha extends JPanel {
+
+}

@@ -1,0 +1,24 @@
+package vistas.paneles;
+
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class PanelDerecha extends JPanel {
+	private JLabel LPremios;
+	private JTextField tbPremios;
+	private JButton btReiniciar, btCerrar;
+	
+	public PanelDerecha() {
+		setLayout(new GridLayout(4, 1));
+		cargarComponentes();
+	}
+
+	private void cargarComponentes() {
+		lPremios = new JLabel("Premios:");
+		tbPremios = new JTextField("0");
+	}
+
+}

@@ -1,0 +1,9 @@
+package vistas.paneles;
+
+import javax.swing.JPanel;
+
+public class PanelTablero extends JPanel {
+	public PanelTablero() {
+		
+	}
+}

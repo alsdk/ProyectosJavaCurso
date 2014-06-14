@@ -1,0 +1,11 @@
+package vistas.botones;
+
+import javax.swing.JButton;
+
+public class Botones extends JButton {
+	private double premio;
+	private String nombrefich;
+	private boolean pulsado;
+	
+	
+}

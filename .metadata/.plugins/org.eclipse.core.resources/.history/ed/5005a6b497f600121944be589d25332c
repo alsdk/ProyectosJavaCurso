@@ -1,0 +1,11 @@
+package vistas.paneles;
+
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+public class PanelTablero extends JPanel {
+	public PanelTablero() {
+		this.setLayout(new GridLayout());
+	}
+}

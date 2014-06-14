@@ -1,0 +1,7 @@
+package vistas.botones;
+
+import javax.swing.JButton;
+
+public class Botones extends JButton {
+
+}

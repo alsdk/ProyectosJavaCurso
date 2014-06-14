@@ -1,0 +1,15 @@
+package vistas;
+
+import javax.swing.JFrame;
+import vistas.paneles.PanelTablero;
+
+public class Ventana extends JFrame {
+	private PanelTablero pTablero;
+	
+	public Ventanas() {
+		setTitle("Juego de buscar tesoros");
+		setBounds(100, 100, 500, 300);
+		crearPaneles();
+	}
+
+}

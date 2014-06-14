@@ -1,0 +1,28 @@
+package vistas.paneles;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+import javax.swing.JPanel;
+import vistas.botones.Botones;
+
+public class PanelTablero extends JPanel {
+	
+	public PanelTablero() {
+		setLayout(new GridLayout(3, 3));		// gridlayout de 3x3
+		crearBotones();
+	}
+
+	private void crearBotones() {
+		Botones boton = null;
+		
+		for (int i = 0; i < 9; ++i) {		// creamos 9 botones 
+			boton = new Botones();
+			if (i == 4) {
+				boton.setPremio(100000);
+				boton.setNombrefich("premio1.png");
+			}
+			boton.setBackground(Color.BLACK);
+			add(boton);
+		}
+	}
+}
